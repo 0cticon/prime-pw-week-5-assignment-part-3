@@ -32,6 +32,7 @@ function showCollection(collectionInput) {
 }
 showCollection(collection);
 
+
 let foundArtist = [];
 function findByArtist(artistInput, collectionInput1) {
     for (i = 0; i < collectionInput1.length; i++) {
@@ -40,8 +41,9 @@ function findByArtist(artistInput, collectionInput1) {
         }
     }
 }
-// findByArtist('chemical brothers', collection);
-// console.log(foundArtist);
+findByArtist('chemical brothers', collection);
+console.log(foundArtist);
+
 findByArtist('The Flaming Lips', collection);
 console.log(foundArtist);
-// each function call and console.log work on their own, but not quite if both are called/logged at the same time.
+// each function call and console.log work on their own, but if both are called/logged at the same time, The Flaming Lips do show up in the firts [].
