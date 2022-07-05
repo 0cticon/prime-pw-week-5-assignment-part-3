@@ -32,7 +32,7 @@ function showCollection(collectionInput) {
 }
 showCollection(collection);
 
-const foundArtist = [];
+let foundArtist = [];
 function findByArtist(artistInput, collectionInput1) {
     for (i = 0; i < collectionInput1.length; i++) {
         if (artistInput === collectionInput1[i].artist) {
@@ -40,7 +40,8 @@ function findByArtist(artistInput, collectionInput1) {
         }
     }
 }
-findByArtist('The Famig Lips', collection);
-console.log(foundArtist);
+// findByArtist('chemical brothers', collection);
+// console.log(foundArtist);
 findByArtist('The Flaming Lips', collection);
 console.log(foundArtist);
+// each function call and console.log work on their own, but not quite if both are called/logged at the same time.
