@@ -32,4 +32,15 @@ function showCollection(collectionInput) {
 }
 showCollection(collection);
 
-
+const foundArtist = [];
+function findByArtist(artistInput, collectionInput1) {
+    for (i = 0; i < collectionInput1.length; i++) {
+        if (artistInput === collectionInput1[i].artist) {
+            foundArtist.push(collectionInput1[i]);
+        }
+    }
+}
+findByArtist('The Famig Lips', collection);
+console.log(foundArtist);
+findByArtist('The Flaming Lips', collection);
+console.log(foundArtist);
