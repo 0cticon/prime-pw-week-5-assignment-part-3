@@ -20,3 +20,16 @@ console.log(addToCollection('Yoshimi Battles the Pink Robots', 'The Flaming Lips
 
 console.table(collection);
 
+// console.log(collection[1].artist);
+function showCollection(collectionInput) {
+    for (i = 0; i < collectionInput.length; i++) {
+        if (collectionInput[i]) {
+            console.log(`${collectionInput[i].title} by ${collectionInput[i].artist} published in ${collectionInput[i].yearPublished}`);
+        }
+
+    } return collection;
+
+}
+showCollection(collection);
+
+
